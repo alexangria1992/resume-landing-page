@@ -6,7 +6,145 @@
     <title>Portfolio Landing Page</title>
     <link rel="stylesheet" href="assets/css/output.css" />
   </head>
-  <body>
-    <h1 class="text-3xl font-bold underline">Hello World</h1>
+  <body class="bg-neutral">
+    <header
+      class="mx-auto max-w-screen-xl px-4 md:px-0 border-2 border-blue-500"
+    >
+      <div class="flex h-16 items-center justify-between">
+        <h1 class="font-bold tracking-tighter text-xl text-gray-900">
+          Deni Kuro
+        </h1>
+        <!-- DESKTOP NAVBAR -->
+        <nav class="hidden md:block outline-double outline-green-500">
+          <ul class="flex items-center gap-6 text-base">
+            <li>
+              <a
+                href=""
+                class="text-gray-900 transition hover:text-gray-900/75 tracking-[.02em]"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href=""
+                class="text-gray-900 transition hover:text-gray-900/75 tracking-[.02em]"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                href=""
+                class="text-gray-900 transition hover:text-gray-900/75 tracking-[.02em]"
+                >Experience</a
+              >
+            </li>
+            <li>
+              <a
+                href=""
+                class="text-gray-900 transition hover:text-gray-900/75 tracking-[.02em]"
+                >Portfolio</a
+              >
+            </li>
+            <li>
+              <a
+                href=""
+                class="text-gray-900 transition hover:text-gray-900/75 tracking-[.02em]"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div
+          class="block md:hidden z-20 absolute right-0 px-5 outline-double outline-yellow"
+        >
+          <button class="bg-secondary p-2 text-white rounded-lg" id="toggle">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                class=""
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M4 6h16M4 12h16M4 18h16"
+                id="toggle-hamburger"
+              />
+              <path
+                id="toggle-x"
+                class="hidden"
+                d="M4.33478 4.33447C4.44092 4.22806 4.56702 4.14364 4.70584 4.08603C4.84466 4.02843 4.99348 3.99878 5.14378 3.99878C5.29407 3.99878 5.4429 4.02843 5.58172 4.08603C5.72054 4.14364 5.84663 4.22806 5.95277 4.33447L11.9997 10.3837L18.0466 4.33447C18.1528 4.22824 18.2789 4.14396 18.4177 4.08647C18.5566 4.02897 18.7053 3.99938 18.8556 3.99938C19.0058 3.99938 19.1546 4.02897 19.2934 4.08647C19.4322 4.14396 19.5583 4.22824 19.6646 4.33447C19.7708 4.44071 19.8551 4.56684 19.9126 4.70565C19.9701 4.84445 19.9997 4.99323 19.9997 5.14347C19.9997 5.29372 19.9701 5.44249 19.9126 5.5813C19.8551 5.7201 19.7708 5.84623 19.6646 5.95247L13.6154 11.9994L19.6646 18.0463C19.7708 18.1525 19.8551 18.2786 19.9126 18.4174C19.9701 18.5562 19.9997 18.705 19.9997 18.8553C19.9997 19.0055 19.9701 19.1543 19.9126 19.2931C19.8551 19.4319 19.7708 19.558 19.6646 19.6643C19.5583 19.7705 19.4322 19.8548 19.2934 19.9123C19.1546 19.9698 19.0058 19.9994 18.8556 19.9994C18.7053 19.9994 18.5566 19.9698 18.4177 19.9123C18.2789 19.8548 18.1528 19.7705 18.0466 19.6643L11.9997 13.6151L5.95277 19.6643C5.84653 19.7705 5.72041 19.8548 5.5816 19.9123C5.44279 19.9698 5.29402 19.9994 5.14378 19.9994C4.99353 19.9994 4.84476 19.9698 4.70595 19.9123C4.56714 19.8548 4.44102 19.7705 4.33478 19.6643C4.22854 19.558 4.14427 19.4319 4.08677 19.2931C4.02928 19.1543 3.99968 19.0055 3.99968 18.8553C3.99968 18.705 4.02928 18.5562 4.08677 18.4174C4.14427 18.2786 4.22854 18.1525 4.33478 18.0463L10.384 11.9994L4.33478 5.95247C4.22837 5.84632 4.14394 5.72023 4.08634 5.58141C4.02873 5.44259 3.99908 5.29377 3.99908 5.14347C3.99908 4.99317 4.02873 4.84435 4.08634 4.70553C4.14394 4.56671 4.22837 4.44062 4.33478 4.33447Z"
+                fill="white"
+              />
+            </svg>
+          </button>
+        </div>
+        <!-- MOBILE NAVBAR -->
+        <nav
+          id="navigation"
+          class="md:hidden fixed z-10 bg-secondary w-11/12 h-80 mt-2 top-0 rounded-xl p-4 shadow-2xl flex items-center border-[3px] border-solid border-gray-900"
+        >
+          <ul class="flex flex-col gap-3">
+            <li>
+              <a
+                href=""
+                class="text-white transition hover:opacity-90 font-medium tracking-[0.2em] text-xl"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href=""
+                class="text-white transition hover:opacity-90 font-medium tracking-[0.2em] text-xl"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                href=""
+                class="text-white transition hover:opacity-90 font-medium tracking-[0.2em] text-xl"
+                >Experience</a
+              >
+            </li>
+            <li>
+              <a
+                href=""
+                class="text-white transition hover:opacity-90 font-medium tracking-[0.2em] text-xl"
+                >Portfolio</a
+              >
+            </li>
+            <li>
+              <a
+                href=""
+                class="text-white transition hover:opacity-90 font-medium tracking-[0.2em] text-xl"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <script>
+      const toggle = document.querySelector("#toggle");
+      const toggleHamburger = document.querySelector("#toggle-hamburger");
+      const toggleX = document.querySelector("#toggle-x");
+      const navigation = document.querySelector("#navigation");
+
+      toggle.addEventListener("click", () => {
+        if (navigation.classList.contains("hidden")) {
+          navigation.classList.remove("hidden");
+          toggleHamburger.classList.add("hidden");
+          toggleX.classList.remove("hidden");
+        } else {
+          navigation.classList.add("hidden");
+          toggleHamburger.classList.remove("hidden");
+          toggleX.classList.add("hidden");
+        }
+      });
+    </script>
   </body>
 </html>
