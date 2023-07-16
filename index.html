@@ -7,15 +7,13 @@
     <link rel="stylesheet" href="assets/css/output.css" />
   </head>
   <body class="bg-neutral">
-    <header
-      class="mx-auto max-w-screen-xl px-4 md:px-0 border-2 border-blue-500"
-    >
+    <header class="mx-auto max-w-screen-xl px-4 md:px-0">
       <div class="flex h-16 items-center justify-between">
         <h1 class="font-bold tracking-tighter text-xl text-gray-900">
           Deni Kuro
         </h1>
         <!-- DESKTOP NAVBAR -->
-        <nav class="hidden md:block outline-double outline-green-500">
+        <nav class="hidden md:block outline-double">
           <ul class="flex items-center gap-6 text-base">
             <li>
               <a
@@ -54,9 +52,7 @@
             </li>
           </ul>
         </nav>
-        <div
-          class="block md:hidden z-20 absolute right-0 px-5 outline-double outline-yellow"
-        >
+        <div class="block md:hidden z-20 absolute right-0 px-5">
           <button class="bg-secondary p-2 text-white rounded-lg" id="toggle">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -85,7 +81,7 @@
         <!-- MOBILE NAVBAR -->
         <nav
           id="navigation"
-          class="md:hidden fixed z-10 bg-secondary w-11/12 h-80 mt-2 top-0 rounded-xl p-4 shadow-2xl flex items-center border-[3px] border-solid border-gray-900"
+          class="hidden md:hidden fixed z-10 bg-secondary w-11/12 h-80 mt-2 top-0 rounded-xl p-4 shadow-2xl flex items-center border-[3px] border-solid border-gray-900"
         >
           <ul class="flex flex-col gap-3">
             <li>
@@ -127,6 +123,66 @@
         </nav>
       </div>
     </header>
+
+    <section
+      class="mx-auto max-w-screen-xl h-full md:py-10 hero outline-double outline-red-500"
+    >
+      <div
+        class="grid md:grid-cols-3 grid-cols-1 gap-6 outline-double outline-green-500"
+      >
+        <div
+          class="bg-secondary h-full md:h-[38rem] p-7 rounded-xl md:rounded-none mt-5 md:mt-0 hero-grid"
+        >
+          <h1
+            class="text-white font-normal text-4xl md:text-5xl md:leading-[50px] mt-0 md:mt-11 opacity-90"
+          >
+            Building stuffs for the web are accessible and human centered
+            design.
+          </h1>
+          <button
+            class="text-gray-900 font-medium text-base md:text-2xl flex items-center gap-2 bg-white py-2 px-5 rounded-2xl mt-8 hover:opacity-80 shadow-lg hover:shadow-2xl"
+          >
+            Let's talk
+            <svg
+              width="24"
+              height="25"
+              viewBox="0 0 24 25"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M21.75 12.5C21.75 12.7724 21.6023 13.0233 21.3642 13.1556L19.0819 14.4236C14.5705 16.9299 9.81474 18.9687 4.88879 20.508L4.22371 20.7159C3.99598 20.787 3.74798 20.7456 3.55575 20.6043C3.36352 20.4629 3.25 20.2386 3.25 20L3.25 14.25C3.25 13.859 3.55041 13.5336 3.94019 13.5024L4.16752 13.4842C6.31898 13.3121 8.45387 12.9829 10.5552 12.4997C8.42436 12.0098 6.25902 11.6782 4.0769 11.5083L3.94175 11.4977C3.55131 11.4673 3.25 11.1416 3.25 10.75L3.25 5.00001C3.25 4.76142 3.36352 4.53706 3.55575 4.39574C3.74798 4.25441 3.99598 4.21298 4.22371 4.28415L4.88878 4.49198C9.81474 6.03134 14.5705 8.07008 19.0819 10.5764L21.3642 11.8444C21.6023 11.9767 21.75 12.2276 21.75 12.5ZM19.4557 12.5L18.3534 11.8877C14.0256 9.48333 9.46847 7.51801 4.75 6.02089L4.75 10.0596C7.68008 10.3238 10.5783 10.8702 13.4043 11.6912L13.7092 11.7798C14.0299 11.8729 14.2503 12.1668 14.25 12.5007C14.2497 12.8346 14.0287 13.1281 13.7078 13.2206L13.3173 13.3333C10.5188 14.1404 7.65003 14.6784 4.75 14.94L4.75 18.9791C9.46846 17.482 14.0256 15.5167 18.3534 13.1124L19.4557 12.5Z"
+                fill="black"
+              />
+            </svg>
+          </button>
+        </div>
+        <div
+          class="hidden md:block h-[38rem] relative justify-center hero-grid"
+        >
+          <div class="bg-yellow h-[28rem] md:absolute inset-x-0 bottom-0"></div>
+          <img
+            src="/assets/img/image-profile.png"
+            alt=""
+            class="md:absolute bottom-0 w-[80%]"
+            80%=""
+          />
+        </div>
+        <div
+          class="hidden md:block bg-primary h-full md:h-[38rem] px-7 flex-col items-center pb-7 hero-grid"
+        >
+          <img src="./assets/img/img-1.png" alt="" class="w-96 md:w-full" />
+          <p class="text-white text-2xl mt-12 opacity-90">
+            Blending the design with web programming skills to deliver an
+            immersive and engaging user experience through efficient website
+            development, proactive feature optimization, and relentless
+            debugging.
+          </p>
+        </div>
+      </div>
+    </section>
 
     <script>
       const toggle = document.querySelector("#toggle");
