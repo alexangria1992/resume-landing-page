@@ -913,6 +913,21 @@ video {
   padding-bottom: 8rem;
 }
 
+.py-10{
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.px-3{
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.py-3{
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
 .pb-12{
   padding-bottom: 3rem;
 }
@@ -1031,6 +1046,11 @@ video {
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-green-900{
+  --tw-text-opacity: 1;
+  color: rgb(20 83 45 / var(--tw-text-opacity));
 }
 
 .underline{
@@ -1199,6 +1219,11 @@ video {
     padding-bottom: 2.5rem;
   }
 
+  .md\:py-32{
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+
   .md\:text-start{
     text-align: start;
   }
@@ -1225,5 +1250,13 @@ video {
 
   .md\:leading-\[50px\]{
     line-height: 50px;
+  }
+}
+
+@media (min-width: 1024px){
+  .lg\:hover\:shadow-2xl:hover{
+    --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+    --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
   }
 }
